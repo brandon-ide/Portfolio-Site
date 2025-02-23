@@ -65,7 +65,7 @@ header {
 video {
     margin-top: 1em;
     border-radius: .5em;
-    width: 20em;
+    width: 17em;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -136,7 +136,7 @@ ol {
 #contact {
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 2em;
-    padding-left: 6em;
+    padding-left: 5em;
     padding-right: 1em;
     padding-bottom: 2em;
 }
@@ -365,7 +365,7 @@ ol {
     #contactSignature {
         display: block;
         height: 7em;
-        margin-left: 30em;
+        margin-left: 18em;
         margin-top: -6em;
     }
         
@@ -404,6 +404,13 @@ ol {
         display: block;
         margin-left: 30%;
         text-align: left;
+    }
+
+    #contactSignature {
+        display: block;
+        height: 7em;
+        margin-left: 26em;
+        margin-top: -6em;
     }
         
 };
