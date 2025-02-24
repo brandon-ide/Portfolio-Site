@@ -70,7 +70,7 @@ video {
 }
 
 .previous {
-    position: absolute;
+    position: fixed;
     margin-top: 1.5em;
     margin-left: -.75em;
     font-size: 3em;
@@ -78,7 +78,7 @@ video {
 }
 
 .next {
-    position: absolute;
+    position: fixed;
     margin-top: 1.5em;
     margin-left: .25em;
     font-size: 3em;
