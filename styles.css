@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-image: url("assets/mountains.jpg");
     background-size: cover;
@@ -53,6 +57,7 @@ header {
     opacity: 97%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     color: #ffff;
+    overflow-x: hidden;
 }
 
 .projectSlides {
@@ -65,7 +70,7 @@ header {
 video {
     margin-top: 1em;
     border-radius: .5em;
-    width: 17em;
+    height: 9.5em;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -186,21 +191,21 @@ ol {
     video {
         margin-top: 2em;
         border-radius: .5em;
-        width: 27em;
+        height: 20em;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
     
     .previous {
-        position: absolute;
-        margin-top: 1.75em;
+        position: fixed;
+        margin-top: 2.25em;
         margin-left: -.75em;
         font-size: 4em;
         cursor: pointer;
     }
     
     .next {
-        position: absolute;
-        margin-top: 1.75em;
+        position: fixed;
+        margin-top: 2.25em;
         margin-left: .25em;
         font-size: 4em;
         cursor: pointer;
