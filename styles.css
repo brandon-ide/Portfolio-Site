@@ -75,7 +75,7 @@ video {
 }
 
 .previous {
-    position: fixed;
+    position: absolute;
     margin-top: 1.5em;
     margin-left: -.75em;
     font-size: 3em;
@@ -83,7 +83,7 @@ video {
 }
 
 .next {
-    position: fixed;
+    position: absolute;
     margin-top: 1.5em;
     margin-left: .25em;
     font-size: 3em;
@@ -177,6 +177,34 @@ ol {
 
 }
 
+@media only screen and (min-width: 430px) {
+
+    video {
+        margin-top: 1em;
+        border-radius: .5em;
+        height: 13em;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .previous {
+        position: absolute;
+        margin-top: 2em;
+        margin-left: -.75em;
+        font-size: 3em;
+        cursor: pointer;
+    }
+    
+    .next {
+        position: absolute;
+        margin-top: 2em;
+        margin-left: .25em;
+        font-size: 3em;
+        cursor: pointer;
+    }
+
+}
+
+
 @media only screen and (min-width: 540px) {
     
     #header-titles {
@@ -191,21 +219,21 @@ ol {
     video {
         margin-top: 2em;
         border-radius: .5em;
-        height: 20em;
+        height: 14em;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
     
     .previous {
-        position: fixed;
-        margin-top: 2.25em;
+        position: absolute;
+        margin-top: 1.5em;
         margin-left: -.75em;
         font-size: 4em;
         cursor: pointer;
     }
     
     .next {
-        position: fixed;
-        margin-top: 2.25em;
+        position: absolute;
+        margin-top: 1.5em;
         margin-left: .25em;
         font-size: 4em;
         cursor: pointer;
@@ -281,7 +309,7 @@ ol {
     video {
         margin-top: 2em;
         border-radius: .5em;
-        width: 40em;
+        height: 21em;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
     
@@ -341,13 +369,13 @@ ol {
     video {
         margin-top: 2em;
         border-radius: .5em;
-        width: 50em;
+        height: 30em;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 
     .previous {
         position: absolute;
-        margin-top: 2.5em;
+        margin-top: 3em;
         margin-left: -.75em;
         font-size: 5em;
         cursor: pointer;
@@ -355,7 +383,7 @@ ol {
     
     .next {
         position: absolute;
-        margin-top: 2.5em;
+        margin-top: 3em;
         margin-left: .25em;
         font-size: 5em;
         cursor: pointer;
@@ -385,13 +413,13 @@ ol {
     video {
         margin-top: 2em;
         border-radius: .5em;
-        width: 60em;
+        height: 36em;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 
     .previous {
         position: absolute;
-        margin-top: 2em;
+        margin-top: 2.5em;
         margin-left: -.75em;
         font-size: 7em;
         cursor: pointer;
@@ -399,7 +427,7 @@ ol {
     
     .next {
         position: absolute;
-        margin-top: 2em;
+        margin-top: 2.5em;
         margin-left: .25em;
         font-size: 7em;
         cursor: pointer;
