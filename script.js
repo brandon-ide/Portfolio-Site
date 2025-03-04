@@ -1,27 +1,31 @@
-// Video muting functionality
-const video = document.getElementById('projects');
-video.muted = true;
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    } else {
+      entry.target.classList.remove('show');
+    }
+  });
+});
 
-// Slideshow Controls
-let slideIndex = 1;
-showSlides(slideIndex);
+const hiddenElements = document.querySelectorAll('.hidden');
+  hiddenElements.forEach((el) => observer.observe(el));
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-};
+const hiddenRightElement = document.querySelectorAll('.hiddenRight');
+  hiddenRightElement.forEach((el) => observer.observe(el));
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-};
+const toggleButton = document.getElementById("darkModeToggle");
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("projectSlides");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slides[slideIndex-1].style.display = "block";
-};
+if (localStorage.getItem("darkMode") === "enabled") {
+    document.body.classList.add("dark-mode");
+}
+  
+toggleButton.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+  
+    if (document.body.classList.contains("dark-mode")) {
+        localStorage.setItem("darkMode", "enabled");
+    } else {
+        localStorage.setItem("darkMode", "disabled");
+    }
+});

@@ -4,229 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
     <title>Brandon Ide Portfolio</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-</head>
 <body>
-<header>
-    <h1 id="headerName">Brandon<br>Devere Ide</h1>
-    <img src="assets/signature-dark.png" id="signature" alt="header-signature"/>
-        
+    <div id="headerContainer">
+    <image id="darkModeToggle" src="./assets/me.webp" />
+
     <div class="jumpLinks">
-        <a href=#projects id="projectsLink">Projects</a>
-        <a href=#tech id="techLink"> Tech Stack</a>
-        <a href=#contact id="contactLink">Contact Me</a>
+        <a href=#projects id="projectsLink">/ Projects</a>
+        <a href=#tech id="techLink">/ Tech Stack</a>
+        <a href=#contact id="contactLink">/ Contact Me</a>
     </div>
-</header>
-<main>
-    <div class="container">
-    <div class="projectSlides">
-        <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
-            <video id="projects" controls>
-                <source src="assets/taskassistvid.mov" type="video/mp4">
-            </video>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-        <br><br>
-
-        <h1>.: Task Assist :.</h1>  <br>
-            <p><strong> 
-                The last task managing app you will ever need.
-                Task Assist lets users manage personal, work, 
-                and even private tasks. Users can add, delete, 
-                update and view their tasks. They can also categorize 
-                tasks and set priority levels for them, as well as set
-                an optional due date. Users can also see their 
-                private tasks in a different page, adding one more
-                small layer of security on top of logging in using 
-                their google account.
-            </strong></p>  
-            
-            <br><br>
-
-            <p>Tech used: HTML, CSS, React, Typescript, Firebase, Express, MongoDB, Node.js</p>  
-                
-            <br><br>
-
-            <p>
-                My contributions:
-            </p> 
-            
-            <br><br> 
-            
-            <ol>
-                <li>Created the initial frontend design</li>
-                <li>Created initial sidebar and sidebar functionality</li>
-                <li>Contributed the TaskAssist logo</li>
-                <li>Created Dark Mode and Dark Mode functionality</li>
-                <li>Connected the local database to communicate with the frontend via API</li>
-                <li>Created the initial repository for the project</li>
-                <li>Adapted the repository into two new repositories to make file <br> 
-                    structure between frontend and backend clearer</li>
-                <li>Made the application responsive across Mobile, tablets, and desktops</li>
-                <li>Created the mongodb database to store user tasks</li>
-                <li>Created the Add A Task component and component functionality</li>
-                <li>Created the Private Task component and component functionality</li>
-                <li>Created the Share A Task component and component functionality</li>
-            </ol>
-
-                <br>
-
-            <a class="githubLink" href="https://github.com/brandon-ide/Task-Assist-Frontend">
-                Click to see Github Repository
-            </a>
-        </div>
-        <!-- SECOND SLIDE -->
-        <div class="projectSlides">
-            <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
-                <video controls>
-                    <source src="assets/tipcalcvid.mov" type="video/mp4">
-                </video>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-            <br><br>
-
-            <h1>
-                .: Service-Based Tipper :.
-            </h1>  
-            
-            <br>
-                
-                <p> 
-                    A tipping application based off of the user's experience 
-                    with the service provided. We think more easily in 
-                    terms of our human experience than we do in terms 
-                    of pure mathematics, so this app is more intuitive in 
-                    that sense. A little message follows the tip calculation 
-                    to make the user's app experience more like they're asking 
-                    a friend how much to tip instead of using a calculator.
-                </p>
-                
-                <br><br>
-    
-                <p>Tech used: HTML, CSS, Javascript</p>
-                
-                <br><br>
-
-                <a class="githubLink" href="https://github.com/brandon-ide/Tip-Calculator">
-                    Click to see Github Repository
-                </a>
-            </div>
-            <!-- THIRD SLIDE -->
-            <div class="projectSlides">
-                <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
-                    <video controls>
-                        <source src="assets/redditvid.mov" type="video/mp4">
-                    </video>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            
-                <br><br>
-                
-                <h1>
-                    .: Reddit API :.
-                </h1>  
-                
-                <br>
-                    
-                    <p> 
-                        The user can get the latest updates from 
-                        Reddit's r/Aww forum by fetching an API and 
-                        displaying real-time posts. If the user wishes, 
-                        they can click a link to a post and read further 
-                        comments on the post clicked via reddit.com 
-                    </p> 
-                        
-                    <br><br>
-        
-                    <p>Tech used: HTML, CSS, Javascript, APIs</p>
-                    
-                    <br><br>
-
-                    <a class="githubLink" href="https://github.com/brandon-ide/Reddit">
-                        Click to see Github Repository
-                    </a>
-                </div>
-            <!-- FOURTH SLIDE -->
-                <div class="projectSlides">
-                    <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
-                        <video controls>
-                            <source src="assets/portfoliovid.mov" type="video/mp4">
-                        </video>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                
-                    <br><br>
-                    
-                    <h1>
-                        .: Portfolio Site :.
-                    </h1>  
-                    
-                    <br>
-                        
-                        <p> 
-                            This portfolio site uses Javascript for its video 
-                            slideshow functionality. It uses multiple media 
-                            queries to accomodate different screen sizes, a flexbox 
-                            grid for the tech stack images, and consistent bold 
-                            typefacing for an easy to read experience. 
-                        </p> 
-                            
-                        <br><br>
-            
-                        <p>Tech used: HTML, CSS, Javascript</p>
-                        
-                        <br><br>
-    
-                        <a class="githubLink" href="https://github.com/brandon-ide/Portfolio-Site">
-                            Click to see Github Repository
-                        </a>
-                    </div>
-                </div>
-            <div class="container" id="tech">
-                <img class="techImage" src="assets/html.webp" alt="htmlLogo" />
-                <img class="techImage" src="assets/css.webp" alt="cssLogo" />
-                <img class="techImage" src="assets/javascript.png" alt="jsLogo" />
-                <img class="techImage" src="assets/mongodb.png" alt="mongoLogo" />
-                <img class="techImage" src="assets/express.webp" alt="expressLogo" />
-                <img class="techImage" src="assets/react.png" alt="reactLogo" />
-                <img class="techImage" src="assets/node.png" alt="nodeLogo" />
-                <img class="techImage" src="assets/native.png" alt="nativeLogo" />
-                <img class="techImage" src="assets/expo.png" alt="expoLogo" />
-                <img class="techImage" src="assets/ts.png" alt="typescriptLogo" />
-            </div>
-        <div class="container" id="futureProjects">
-            <h1>What's next for 2025?</h1>  <br>
-                <p><strong>
-                    Utilizing React Native and Expo to create an oasis where basketball 
-                    enthusiasts and players can connect to find local games and courts in their 
-                    area with my application "Networx". Also obtaining the AWS Solutions 
-                    Architect Certification!
-                </strong></p>
-                
-                <img class="networxImage" src="assets/networx-logo.png" alt="networxLogo" />
-            <img class="techImage" src="assets/aws.png" alt="awsCert" />
-        </div>
-        <div class="container" id="contact">
-            <h2>Email me at:</h2> <br>
-                <a id="email" href="mailto:brandon.d.ide@gmail.com">brandon.d.ide@gmail.com</a> 
-            
-            <br><br><br>
-            
-            <h2>Linkedin:</h2>
-                <a href="https://www.linkedin.com/in/brandon-ide">
-                    <img id="liImage" src="assets/linkedin.webp" alt="linkedinLogo"/>
-                </a> 
-            
-            <br><br><br>
-            
-            <h2>GitHub:</h2>
-                <a href="https://github.com/brandon-ide?tab=repositories">
-                    <img id="gitImage" src="assets/github.png" alt="githubLogo"/>
-                </a>
-
-            <img src="assets/signature-dark.png" id="contactSignature" alt="header-signature"/>
-        <img src="assets/cece+dad.jpeg" id="contactImage" alt="brandonAndDaughter" />
     </div>
-</main>
-<script src="script.js"></script>
+
+<section class="hidden" id="projects">
+    <div class="sectionHeader">
+        <h1>Howdy, I'm Brandon</h1>
+            <p>Here's some of my recent projects</p>
+        </div>
+    <div id="projectPreviews">
+
+    </div>
+</section>
+
+<section class="hiddenRight" id="tech">
+    <div class="sectionHeader">
+        <h1>Here are the tools in my belt</h1>
+    </div>
+    <div id="techIcons">
+
+    </div>
+</section>
+
+<section class="hidden" id="contact">
+    <div class="sectionHeader">
+        <h1>Ready to work with Me?</h1>
+            <p>Send an email or DM</p>
+        </div>
+    <div id="contactIcons">
+
+    </div>
+</section> 
+
 </body>
 </html>
