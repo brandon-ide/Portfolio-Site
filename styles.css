@@ -161,6 +161,29 @@ img {
     margin: 1em;
 }
 
+#email {
+    font-size: 30px;
+    margin-right: 2em;
+}
+
+#liImage, #gitImage {
+    height: 2em;
+    width: 2em;
+}
+
+#LiContainer, #GitContainer {
+    display: flex;
+    align-items: center;
+}
+
+.contactContainer {
+    margin-top: -15em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 }
 
 @media only screen and (min-width: 390px) {
