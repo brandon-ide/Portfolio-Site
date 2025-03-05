@@ -69,11 +69,12 @@ h1 {
 
 ol {
     text-align: left;
+    margin: 1em;
 }
 
 #darkModeToggle {
     margin: 1em;
-    height: 6em;
+    height: auto;
     border-radius: 1em;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -123,13 +124,20 @@ a:hover, a:active {
 #demo {
     display: flex;
     justify-content: center;
-    height: 13em;
-    width: 22em;
-    margin: 1em;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    margin: 0;
     margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
     border-radius: .5em;
     box-shadow: 0 0 10px rgb(28, 28, 28);
 }
@@ -210,12 +218,20 @@ p {
 
 }
 
+@media only screen and (min-width: 360px) {
+
+a {
+    font-size: 11px;
+}
+    
+}
+
 @media only screen and (min-width: 390px) {
 
 a {
     font-size: 13px;
 }
-    
+        
 }
 
 @media only screen and (min-width: 430px) {
@@ -229,7 +245,7 @@ a {
 @media only screen and (min-width: 540px) {
 
 a {
-    font-size: 22px;
+    font-size: 20px;
 }
     
 }
@@ -237,9 +253,20 @@ a {
 @media only screen and (min-width: 768px) {
 
 a {
-    font-size: 35px;
+    font-size: 30px;
 }
-    
+
+#demo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
 }
 
 @media only screen and (min-width: 1024px) {
