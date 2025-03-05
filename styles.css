@@ -5,7 +5,6 @@ body {
     background-color: white;
     color: black;
     transition: background-color 0.2s, color 0s;
-    overflow-x: hidden;
 }
 
 body.dark-mode {
@@ -16,6 +15,7 @@ body.dark-mode {
 * {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 html {
@@ -26,6 +26,7 @@ html {
 
 section {
     display: grid;
+    margin-top: 2em;
     place-items: center;
     min-height: 100vh;
 }
@@ -60,10 +61,19 @@ h1 {
     font-weight: 700;
 }
 
+.projectsContainer {
+    text-align: center;
+    margin: 1em;
+    
+}
+
+ol {
+    text-align: left;
+}
+
 #darkModeToggle {
     margin: 1em;
     height: 6em;
-    width: 6em;
     border-radius: 1em;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -105,8 +115,23 @@ a:hover, a:active {
 }
 
 .sectionHeader {
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
+    margin-bottom: 1em;
+}
+
+#demo {
+    display: flex;
+    justify-content: center;
+    height: 13em;
+    width: 22em;
+    margin: 1em;
+    margin-top: 2em;
+}
+
+video {
+    border-radius: .5em;
+    box-shadow: 0 0 10px rgb(28, 28, 28);
 }
 
 .logos {
@@ -124,64 +149,63 @@ a:hover, a:active {
 }
 
 .logo:nth-child(3) {
-    transition-delay: 500ms;
+    transition-delay: 400ms;
 }
 
 .logo:nth-child(4) {
-    transition-delay: 700ms;
+    transition-delay: 500ms;
 }
 
 .logo:nth-child(5) {
-    transition-delay: 900ms;
+    transition-delay: 600ms;
 }
 
 .logo:nth-child(6) {
-    transition-delay: 1100ms;
+    transition-delay: 700ms;
 }
 
 .logo:nth-child(7) {
-    transition-delay: 1200ms;
+    transition-delay: 800ms;
 }
 
 .logo:nth-child(8) {
-    transition-delay: 1300ms;
+    transition-delay: 900ms;
 }
 
 .logo:nth-child(9) {
-    transition-delay: 1400ms;
+    transition-delay: 1000ms;
 }
 
 .logo:nth-child(10) {
-    transition-delay: 1500ms;
+    transition-delay: 1100ms;
 }
 
 img {
     height: 10em;
     width: 10em;
     margin: 1em;
+    border-radius: .5em;
+    box-shadow: 0 0 5px 3px rgb(209, 209, 209);
 }
 
-#email {
-    font-size: 30px;
-    margin-right: 2em;
-}
-
-#liImage, #gitImage {
-    height: 2em;
-    width: 2em;
-}
-
-#LiContainer, #GitContainer {
-    display: flex;
-    align-items: center;
-}
-
-.contactContainer {
-    margin-top: -15em;
-    display: flex;
-    flex-wrap: wrap;
+#contact {
+    display: column;
     justify-content: center;
-    align-items: center;
+}
+
+#email, #linkedin, #github {
+    display: flex;
+    font-size: 1.5em;
+}
+
+#cecepic {
+    height: 11em;
+    border-radius: 1em;
+}
+
+p {
+    text-align: center;
+    margin: 1em;
 }
 
 }
@@ -197,7 +221,7 @@ a {
 @media only screen and (min-width: 430px) {
 
 a {
-    font-size: 16px;
+    font-size: 15px;
 }
 
 }
