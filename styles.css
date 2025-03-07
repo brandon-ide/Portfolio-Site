@@ -91,9 +91,11 @@ ol {
 
 #headerContainer {
     display: flex;
+    position: sticky;
     justify-content: space-between;
     align-items: center;
     width: 100vw;
+    overflow: hidden;
     box-shadow: 0 0 15px rgb(28, 28, 28);
 }
 
@@ -130,8 +132,8 @@ a:hover, a:active {
     justify-content: center;
     align-items: center;
     height: auto;
-    width: 100%;
-    margin: 0;
+    width: 85%;
+    margin: auto;
     margin-top: 2em;
     margin-bottom: 2em;
 }
@@ -144,6 +146,10 @@ video {
     width: 100%;
     border-radius: .5em;
     box-shadow: 0 0 10px rgb(28, 28, 28);
+}
+
+#repos {
+    font-size: 1em;
 }
 
 .logos {
@@ -260,15 +266,16 @@ a {
     font-size: 30px;
 }
 
-#demo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    width: 100%;
-    margin: 0;
-    margin-top: 2em;
-    margin-bottom: 2em;
+h1 {
+    font-size: 35px;
+}
+
+p, li {
+    font-size: 25px;
+}
+
+#repos {
+    font-size: 1.5em;
 }
 
 }
