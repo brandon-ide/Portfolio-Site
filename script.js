@@ -29,3 +29,4 @@ toggleButton.addEventListener("click", () => {
         localStorage.setItem("darkMode", "disabled");
     }
 });
+
